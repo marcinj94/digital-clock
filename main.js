@@ -1,7 +1,7 @@
 const showTime = document.querySelector('.time');
 const showDate = document.querySelector('.date');
 
-const daysName = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const daysName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
 const showDateAndTime = () => {
@@ -27,7 +27,7 @@ const showDateAndTime = () => {
 
     showTime.textContent = `${hours}:${minutes}:${seconds}`;
 
-    showDate.textContent = `${day}-${month}-${year} ${dayName}`
+    showDate.textContent = `${dayName}, ${day}-${month}-${year}`
 }
 
 setInterval(showDateAndTime, 1000);
